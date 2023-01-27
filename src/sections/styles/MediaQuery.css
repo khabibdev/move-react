@@ -1,0 +1,270 @@
+/* **********************
+BELOW 1361PX (Tablets) 
+************************/
+@media (max-width: 85em) {
+    html {
+        font-size: 55%;
+    }
+}
+/* **********************
+BELOW 1200PX (Tablets) 
+************************/
+@media (max-width: 75em) {
+    html {
+        font-size: 50%;
+    }
+}
+
+/* **********************
+BELOW 1024PX (Tablets) 
+************************/
+
+@media (max-width: 64em) {
+    html {
+        font-size: 40%;
+    }
+    .btn-mobile-nav {
+        display: block;
+    }
+    .main-nav {
+        background-color: rgba(255, 255, 255, 0.97);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: all 0.5s;
+        pointer-events: none;
+        visibility: hidden;
+    }
+    .nav-open .main-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+        display: block;
+    }
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+        display: none;
+    }
+
+    .chevron-down {
+        display: none;
+    }
+    .main-nav-list {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+}
+/* **********************
+BELOW 865PX (Phones) 
+************************/
+
+@media (max-width: 54em) {
+    html {
+        font-size: 35%;
+    }
+}
+/* **********************
+BELOW 720PX (Phones) 
+************************/
+
+@media (max-width: 45em) {
+    html {
+        font-size: 30%;
+    }
+}
+
+/* **********************
+BELOW 640PX (Phones) 
+************************/
+
+@media (max-width: 40em) {
+    html {
+        font-size: 25%;
+    }
+}
+
+/* **********************
+BELOW 500PX (Phones) 
+************************/
+
+@media (max-width: 31.52em) {
+    html {
+        font-size: 25%;
+    }
+    .header {
+        max-width: 50rem;
+    }
+
+    .section-hero-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .hero-picture {
+        display: block;
+    }
+    .find-link {
+        margin-bottom: 5rem;
+    }
+    .offer-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 50rem;
+    }
+
+    .section-offer {
+        height: 165rem;
+    }
+    .dream-job-img {
+        padding: 0 !important;
+    }
+    .section-dream-job {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 130rem;
+        text-align: center;
+        width: auto;
+    }
+    .dream-job-text {
+        padding: 0;
+    }
+    .vacancies-header {
+        display: none;
+    }
+    .vacancy {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        width: 33.5rem;
+        height: 17.3rem;
+    }
+    .footer {
+        height: auto;
+        padding-top: 9.6rem;
+    }
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .company__brand {
+        margin: 0;
+        flex: 0;
+    }
+    .company__socials {
+        gap: 20rem;
+    }
+}
+/* **********************
+BELOW 375PX (Phones) 
+************************/
+/* 
+@media (max-width: 24em) {
+  html {
+      font-size: 30%;
+  }
+  .container {
+      gap: 0;
+      margin-bottom: 0;
+  }
+  .logo {
+      margin-right: 0;
+  }
+  .section-hero-content {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+
+  .find-link {
+      margin-bottom: 5rem;
+  }
+  .heading-primary {
+      font-size: 4rem;
+      line-height: 7.3rem;
+  }
+  .heading-describtion {
+      font-size: 1.8rem;
+      line-height: 3.5rem;
+  }
+  .offer {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-bottom: 2.9rem;
+  }
+  .offer-div {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  .offer-text-box p {
+      padding: 0 10rem 0 10rem;
+  }
+  .section-offer {
+      width: auto;
+      height: 186.5rem;
+  }
+  .section-dream-job {
+      display: grid;
+      grid-template-columns: 1fr;
+      height: 103.4rem;
+  }
+  .dream-job-img {
+      padding: 0;
+      margin-bottom: 5rem;
+  }
+  .dream-job-text {
+      padding: 0;
+  }
+  .position {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      height: 17.3rem;
+      padding: 3.2rem 0;
+  }
+  .vacancy-info {
+      display: none;
+  }
+  .vacancy-text {
+      margin-bottom: 0 !important;
+  }
+  .btn {
+      width: 33.5rem;
+      height: 10rem;
+      font-size: 2rem;
+      line-height: 3rem;
+  }
+  .footer {
+      padding: 9.6rem 0 0 2rem;
+      height: 11.16rem;
+  }
+  .footer__content {
+      display: grid;
+      grid-template-columns: 1fr;
+  }
+  .company__logo {
+      height: 4.4rem;
+      width: 14.9rem;
+  }
+  .company__socials {
+      gap: 10rem;
+  }
+  .social-icon {
+      height: 4.78rem;
+      width: 4.78rem;
+  }
+  .company__links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+  }
+} */

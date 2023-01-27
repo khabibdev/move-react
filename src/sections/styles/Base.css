@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    line-height: 1;
+    font-weight: 500;
+    color: #8a94a6;
+    overflow-x: hidden;
+}
+
+/* **********************s
+General Reusable Components 
+************************/
+
+.container {
+    /* 1440px */
+    max-width: 144rem;
+    margin: 0 auto;
+}
+.grid {
+    display: grid;
+    column-gap: 3.2rem;
+    row-gap: 3.7rem;
+    /* margin-bottom: 9.6rem; */
+}
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+    grid-template-columns: repeat(4, 1fr);
+}
