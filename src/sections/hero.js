@@ -4,8 +4,8 @@ export const Hero = () => {
     return (
         <section className="section-hero">
             <div className="container section-hero-content">
-                <div classNameName="hero-text-box">
-                    <h1 classNameName="heading-primary">
+                <div className="hero-text-box">
+                    <h1 className="heading-primary">
                         We are a small
                         <br />
                         team that thinks <br />
